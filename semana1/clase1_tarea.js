@@ -52,7 +52,7 @@ async function main() {
     console.log("\nIngrese Una Opcion Valida");
   }
 
-  }while (op!=5);
+  }while (op==2);
 }
 
 main();
