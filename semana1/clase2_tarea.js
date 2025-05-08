@@ -19,7 +19,7 @@ async function main() {
         
         const op = Number(await ask('\nIngresa número de la Opcion: '));
       
-if(op===1){
+        if(op===1){
         const tem = Number(await ask('\nIngresa la temperatura: '));
         
         if(tem <=10){
@@ -40,7 +40,7 @@ if(op===1){
         console.log('\nOpcion Invalida');
     }
    
-    }while (op==2);
+    }while (op!=2);
     
 
 
