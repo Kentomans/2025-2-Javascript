@@ -14,19 +14,19 @@ async function main() {
     
     const number = Number(await ask("Ingresa un número "));
 // TODO : Convertir a switch
-const multiplo5 = (number % 5 === 0)+1;
-const multiplo3 = (number % 3 === 0) +2;
+const multiplo5 = (number % 5 === 0);
+const multiplo3 = (number % 3 === 0);
 const multiploAmbos = multiplo5 && multiplo3;
 
 switch( multiplo5 || multiplo3 || multiploAmbos){
- case 1:
+    case multiploAmbos:
+        console.log("Múltiplo de 3 y 5");
+       break;
+ case multiplo5:
     console.log("Múltiplo de 5");
    break;
-   case 2:
+   case multiplo3:
     console.log("Múltiplo de 3");
-   break;
-   case 3:
-    console.log("Múltiplo de 3 y 5");
    break;
  default:
     console.log("No es múltiplo de 3 ni de 5");
